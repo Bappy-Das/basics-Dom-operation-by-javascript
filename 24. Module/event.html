@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>24.2</h1>
+    <h1 onclick="alert('valo hoye jao masud')">Event Nia Clickbaji</h1>
+    <button onclick="makeRed()">Click BG red</button>
+    <button onclick="makeYellow()">Click BG yellow</button>
+    <button id="blue">Click BG blue</button>
+    <button id="green">Click BG green</button>
+    <button id="goldenrod">Click BG goldenrod</button>
+    <button id="hotpink">Click BG hotpink</button>
+    <hr>
+    <h1>24.3</h1>
+    <p id="clicking-method"></p>
+    <input id="name-field" type="text">
+    <button id="from-textBox">from text Box get data</button>
+    <button onclick="justClickFunction()">just function</button>
+    <button id="direct-click">Direct add event listener</button>
+    <hr>
+
+    <h1>24.4</h1>
+    <h1>Add your comment Fast</h1>
+    <Div id="comment-fast">
+        <h3>This is fast comment</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit inventore pariatur nihil eaque vel provident,
+            cumque aliquam ea porro repellendus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum laborum consectetur suscipit et
+            adipisci sit quae, sequi porro deserunt!</p>
+    </Div>
+    <hr>
+
+    <h1>24.5</h1>
+
+
+    <h5>Comment Area</h5>
+    <textarea name="" id="text-area" cols="60" rows="4"></textarea>
+    <br>
+    <button id="add-comment">Add Comment</button>
+
+    <hr>
+
+    <h1>24.6</h1>
+    <h3 id="secret-name">very very important data secret</h3>
+    <input id="check" type="text">
+    <button id="delete-btn" disabled>delete</button>
+
+
+
+
+
+    <script src="js/event.js"></script>
+    <script>
+        // const deleteBtn = document.getElementById('delete-btn');
+        // deleteBtn.addEventListener('click', function (event) {
+        //     const inputText = document.getElementById('check')
+        //     if (inputText.value == 'Delete') {
+        //         const sName = document.getElementById('secret-name');
+        //         sName.style.display = 'none';
+        //     }
+        //     else {
+
+        //     }
+
+        // })
+        document.getElementById('check').addEventListener('keyup', function (event) {
+            if (event.target.value == 'delete') {
+                document.getElementById('delete-btn').removeAttribute('disabled');
+            }
+            else {
+                document.getElementById('delete-btn').setAttribute('disabled', true);
+            }
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

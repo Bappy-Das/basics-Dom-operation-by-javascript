@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>This is header </h1>
+    </header>
+    <main>
+        <article>
+            <h3>this artical head 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vel veniam maxime quasi itaque id eum
+                debitis reiciendis perferendis nostrum.</p>
+        </article>
+        <article>
+            <h3>this artical head 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vel veniam maxime quasi itaque id eum
+                debitis reiciendis perferendis nostrum.</p>
+        </article>
+        <article>
+            <h3>this artical head 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vel veniam maxime quasi itaque id eum
+                debitis reiciendis perferendis nostrum.</p>
+        </article>
+        <article>
+            <h3>this artical head 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vel veniam maxime quasi itaque id eum
+                debitis reiciendis perferendis nostrum.</p>
+        </article>
+    </main>
+    <!-- getElementsByTagName -->
+    <script>
+        const student = { namr: 'kismat ali', age: 26, height: "4.5'" };
+        // console.log(document.body);
+        const h3Tag = document.getElementsByTagName("h3");
+        for (const h3 of h3Tag) {
+            // console.log(h3);
+            console.log(h3.innerText);
+        }
+    </script>
+</body>
+
+</html>
